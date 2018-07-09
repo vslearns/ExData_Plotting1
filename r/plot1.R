@@ -1,3 +1,5 @@
+# The dataset was assigned to the dt variable in setup.R
+
 plot1 <- function() {
   message("Subsetting and reformatting data.")
   dt$Date <- as.Date(as.character(dt$Date), format="%d/%m/%Y")
@@ -11,8 +13,6 @@ plot1 <- function() {
   hist(dt$Global_active_power, breaks=11, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
   dev.off()
   message("Success!\n")
-  
-  stop("Stop.")
 }
 
 plot1()

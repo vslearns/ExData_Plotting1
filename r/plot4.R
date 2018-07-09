@@ -1,3 +1,5 @@
+# The dataset was assigned to the dt variable in setup.R
+
 plot4 <- function() {
   message("Subsetting and reformatting data.")
   dt$Date <- as.Date(as.character(dt$Date), format="%d/%m/%Y")
